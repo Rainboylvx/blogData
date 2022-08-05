@@ -1,0 +1,29 @@
+{
+  "name": "cpp_for_beginners",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev .",
+    "build": "vitepress build .",
+    "serve": "vitepress serve .",
+    "com:dev": "vite --config components-vite.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@docsearch/css": "^3.0.0",
+    "@docsearch/js": "^3.0.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/devtools-api": "^6.1.4",
+    "@vueuse/core": "^8.5.0",
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "markdown-it-mathjax3": "^4.3.1",
+    "sass": "^1.54.0",
+    "shiki": "^0.10.1",
+    "vite": "^2.9.7",
+    "viz.js": "^2.1.2",
+    "vue": "^3.2.33"
+  }
+}

@@ -1,0 +1,40 @@
+# Token 仓库更新token
+token: MYTOKEN_BLOG
+# 网站名
+site_name: RainboyBlog
+# 默认的网页头部图片
+default_cover: https://i.loli.net/2019/11/04/MRILYgqKiPETNce.gif
+
+PORT: 4044
+
+Author:
+  name: Rainboy # 名字
+  link: https://rainboy.gitee.io/resume/    # 个人主页
+
+# 基础标题
+baseTitle: RainboyBlog
+# favicon
+favicon: /home/rainboy/mycode/blogData/static/favicon.ico
+
+# 默认的head 背景
+
+# === Book 的相关配置
+remoteRespository: https://rainboylvx:597872644%40liu@github.com/Rainboylvx/blogData
+localRespository: /home/rainboy/mycode/blogData
+catalogueEnterPoints: SUMMARY.yml
+scanCatalogue: false
+scanAllRespository: true
+
+# === redis cache 配置
+redis:
+    addr: redis://localhost
+    opts: { db:2 }
+# 缓存时间
+cache_time: 1
+# === route table
+index_alias: '/list'    # 首页 alias
+route_disable: []
+
+# 控制目录的那些项目显示
+# 主页 目录 列表 标签云 历史记录 关于
+menu_disable: ['列表']
