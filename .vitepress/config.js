@@ -1,9 +1,18 @@
-
+const {join,dirname}  = require('path')
 import mathjax3 from 'markdown-it-mathjax3';
 import markdownEjs from './markdown-plugin/ejs'
 import extend_fence from './markdown-plugin/extend_fenc'
 
 const customElements = ['mjx-container'];
+
+const catlogs = ['_学习笔记']
+//const sidebar = {}
+//for(let name of catlogs) {
+//sidebar['/'+name] = require(
+//join(dirname(import.meta.url),'..', name,'sidebar.js')
+//)
+//}
+//sidebar['/_学习笔记'] = require('../_学习笔记/sidebar.js')
 
 export default {
   lang: 'zh-CN',
@@ -52,8 +61,18 @@ export default {
     ],
 
     sidebar : {
-    }
-
-  }
+      '/学习笔记' :
+      [
+        {
+          text: '学习笔记',
+          collapsible: true,
+          //collapsed: true,
+          items : [
+            { text: 'Learn Vim Script The Hard Way', link: '/_学习笔记/learn_vimscript_the_hard_way.md' },
+          ]
+        }
+      ]
+    } // end sidebar
+  } // end themeConfig
 
 }

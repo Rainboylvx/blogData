@@ -1,5 +1,5 @@
 {
-  "name": "cpp_for_beginners",
+  "name": "cpphub_web_html",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,6 +20,7 @@
     "@vueuse/core": "^8.5.0",
     "body-scroll-lock": "^4.0.0-beta.0",
     "markdown-it-mathjax3": "^4.3.1",
+    "myutils": "file:.vitepress/utils",
     "sass": "^1.54.0",
     "shiki": "^0.10.1",
     "vite": "^2.9.7",
