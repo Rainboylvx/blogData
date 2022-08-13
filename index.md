@@ -6,7 +6,8 @@
 
 ## 目录
 
-- [学习笔记](./_学习笔记/index.md)
+- [VIM相关](./VIM/index.md)
+- [Linux命令与软件](./Linux命令与软件/index.md)
 
 ## 我
 

@@ -1,18 +1,16 @@
 const {join,dirname}  = require('path')
-import mathjax3 from 'markdown-it-mathjax3';
-import markdownEjs from './markdown-plugin/ejs'
-import extend_fence from './markdown-plugin/extend_fenc'
 
 const customElements = ['mjx-container'];
 
-const catlogs = ['_学习笔记']
-//const sidebar = {}
-//for(let name of catlogs) {
-//sidebar['/'+name] = require(
-//join(dirname(import.meta.url),'..', name,'sidebar.js')
-//)
-//}
+const catlogs = ['VIM','Linux命令与软件']
+const sidebar = {}
+for(let name of catlogs) {
+  sidebar['/'+name] = require(
+    join('..', name,'sidebar.js')
+  )
+}
 //sidebar['/_学习笔记'] = require('../_学习笔记/sidebar.js')
+
 
 export default {
   lang: 'zh-CN',
@@ -35,12 +33,7 @@ export default {
     theme: 'material-palenight',
     lineNumbers: true,
 
-    toc: { level: [1, 2,3] },
-    config: (md) => {
-      md.use(markdownEjs);
-      md.use(extend_fence);
-      md.use(mathjax3);
-    }
+    toc: { level: [1, 2,3] }
   },
 
   themeConfig: {
@@ -60,19 +53,7 @@ export default {
       { icon: 'github', link: 'https://github.com/Rainboylvx/blogData' }
     ],
 
-    sidebar : {
-      '/学习笔记' :
-      [
-        {
-          text: '学习笔记',
-          collapsible: true,
-          //collapsed: true,
-          items : [
-            { text: 'Learn Vim Script The Hard Way', link: '/_学习笔记/learn_vimscript_the_hard_way.md' },
-          ]
-        }
-      ]
-    } // end sidebar
+    sidebar
   } // end themeConfig
 
 }

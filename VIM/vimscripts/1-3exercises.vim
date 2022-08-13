@@ -1,0 +1,2 @@
+nnoremap <space> za
+echo ">^.^<"
