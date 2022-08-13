@@ -26,5 +26,10 @@
     "vite": "^2.9.7",
     "viz.js": "^2.1.2",
     "vue": "^3.2.33"
+  },
+  "devDependencies": {
+    "markmap-common": "^0.14.0",
+    "markmap-lib": "^0.14.1",
+    "markmap-view": "^0.14.0"
   }
 }
