@@ -168,3 +168,66 @@ nnoremap <buffer> <localleader>d dd
 
 Find a way to make it easier to add new mappings to vimrc files.
 
+
+```viml
+# split quickly to edit vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+# source vimrc quickly
+nnoremap <leader>sv :source $MYVIMRC<cr>
+```
+
+quickly write and quit in normal mode: [[ZZ]]
+
+## 8 Abbreviations
+
+Abbreviations are useful in day-to-day text editing.
+
+I think abbrev are useful for code snippets.
+
+## 9 More Mapping
+
+```viml
+nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+
+"disable the escape key in insert mode
+```
+
+## 10 Training Your Fingers
+
+```viml
+inoremap <esc> <nop>
+```
+
+### exercises
+
+```viml
+inoremap <left> <nop>
+nnoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap <right> <nop>
+```
+
+## 11 Buffer-Local Options and Mapping
+
+set map,Abbreviations,options in each buffer.
+
+```viml
+nnoremap          <leader>d dd
+nnoremap <buffer> <leader>x dd
+```
+
+THE `<buffer>` in the second nnoremap command told vim to only consider that mapping when we're in the buffer where defined it.
+
+we should use `<localleader>` instead of `<leader>`
+
+## 53 Autoloading
+
+`autoload/path/some.vim`
+
+e,`autoload` -> `delay loading`
+
+```vimL
+call somefile#Hello()
+```
+
+vim will look for a called `autoload/somefile.vim`
