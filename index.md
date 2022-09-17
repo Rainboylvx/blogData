@@ -8,6 +8,7 @@
 
 - [VIM相关](./VIM/index.md)
 - [Linux命令与软件](./Linux命令与软件/index.md)
+- [linux的下编程](./program_under_linux/index.md)
 
 ## 我
 

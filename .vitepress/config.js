@@ -2,7 +2,12 @@ const {join,dirname}  = require('path')
 
 const customElements = ['mjx-container'];
 
-const catlogs = ['VIM','Linux命令与软件']
+const catlogs = [
+    'VIM',
+    'Linux命令与软件',
+    'program_under_linux'
+]
+
 const sidebar = {}
 for(let name of catlogs) {
   sidebar['/'+name] = require(
