@@ -1,0 +1,38 @@
+27878 execve("./1.out", ["./1.out"], 0x7ffec8357a38 /* 57 vars */) = 0
+27878 brk(NULL)                         = 0x55f2ba747000
+27878 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe4d7bd600) = -1 EINVAL (无效的参数)
+27878 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6438fbf000
+27878 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (没有那个文件或目录)
+27878 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+27878 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=190535, ...}, AT_EMPTY_PATH) = 0
+27878 mmap(NULL, 190535, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6438f90000
+27878 close(3)                          = 0
+27878 openat(AT_FDCWD, "/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+27878 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P4\2\0\0\0\0\0"..., 832) = 832
+27878 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+27878 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1953472, ...}, AT_EMPTY_PATH) = 0
+27878 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+27878 mmap(NULL, 1994384, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6438da9000
+27878 mmap(0x7f6438dcb000, 1421312, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f6438dcb000
+27878 mmap(0x7f6438f26000, 356352, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17d000) = 0x7f6438f26000
+27878 mmap(0x7f6438f7d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d4000) = 0x7f6438f7d000
+27878 mmap(0x7f6438f83000, 52880, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6438f83000
+27878 close(3)                          = 0
+27878 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6438da6000
+27878 arch_prctl(ARCH_SET_FS, 0x7f6438da6740) = 0
+27878 set_tid_address(0x7f6438da6a10)   = 27878
+27878 set_robust_list(0x7f6438da6a20, 24) = 0
+27878 rseq(0x7f6438da7060, 0x20, 0, 0x53053053) = 0
+27878 mprotect(0x7f6438f7d000, 16384, PROT_READ) = 0
+27878 mprotect(0x55f2b99df000, 4096, PROT_READ) = 0
+27878 mprotect(0x7f6438ff2000, 8192, PROT_READ) = 0
+27878 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+27878 munmap(0x7f6438f90000, 190535)    = 0
+27878 getrandom("\x25\x4d\x7e\xbd\xca\xcf\x98\x8b", 8, GRND_NONBLOCK) = 8
+27878 brk(NULL)                         = 0x55f2ba747000
+27878 brk(0x55f2ba768000)               = 0x55f2ba768000
+27878 openat(AT_FDCWD, "test.out", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+27878 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+27878 write(3, "11111", 5)              = 5
+27878 exit_group(0)                     = ?
+27878 +++ exited with 0 +++

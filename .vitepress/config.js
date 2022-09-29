@@ -5,10 +5,15 @@ const customElements = ['mjx-container'];
 const catlogs = [
     'VIM',
     'Linux命令与软件',
-    'program_under_linux'
+    'program_under_linux',
+    '学习笔记'
 ]
-
 const sidebar = {}
+// const sidebar = {
+//     '/VIM' : require("../VIM/sidebar.js"),
+//     '/学习笔记/tinyasync' : require("../学习笔记/tinyasync/sidebar.js")
+// }
+
 for(let name of catlogs) {
   sidebar['/'+name] = require(
     join('..', name,'sidebar.js')
@@ -52,6 +57,11 @@ export default {
     editLink: {
       pattern: 'https://github.com/Rainboylvx/blogData/edit/master/:path',
       text: 'Edit this page on GitHub'
+    },
+
+    toGitLink: {
+      pattern: 'https://github.com/Rainboylvx/blogData/blob/master/:path',
+      text: "在github上打开"
     },
 
     socialLinks: [
