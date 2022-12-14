@@ -1,0 +1,1 @@
+import{_ as e,j as t,g as a}from"./chunks/framework.6fa7194a.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"_\u65E5\u5E38\u6280\u5DE7/windows.md"}'),r={name:"_\u65E5\u5E38\u6280\u5DE7/windows.md"};function o(s,n,c,_,d,i){return a(),t("div")}var f=e(r,[["render",o]]);export{m as __pageData,f as default};

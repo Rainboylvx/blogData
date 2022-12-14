@@ -1,0 +1,23 @@
+import{_ as s,j as a,g as n,I as e}from"./chunks/framework.6fa7194a.js";const A=JSON.parse('{"title":"5 \u9012\u5F52","description":"","frontmatter":{},"headers":[],"relativePath":"\u5B66\u4E60\u7B14\u8BB0/haskell/episode5.md"}'),l={name:"\u5B66\u4E60\u7B14\u8BB0/haskell/episode5.md"},p=e(`<h1 id="_5-\u9012\u5F52" tabindex="-1">5 \u9012\u5F52 <a class="header-anchor" href="#_5-\u9012\u5F52" aria-hidden="true">#</a></h1><div class="language-plaintext line-numbers-mode"><button class="copy"></button><span class="lang">plaintext</span><pre><code><span class="line"><span style="color:#A6ACCD;">maximum&#39; :: (Ord a) =&gt; [a] -&gt; a   </span></span>
+<span class="line"><span style="color:#A6ACCD;">maximum&#39; [] = error &quot;maximum of empty list&quot;   </span></span>
+<span class="line"><span style="color:#A6ACCD;">maximum&#39; [x] = x   </span></span>
+<span class="line"><span style="color:#A6ACCD;">maximum&#39; (x:xs)    </span></span>
+<span class="line"><span style="color:#A6ACCD;">    | x &gt; maxTail = x   </span></span>
+<span class="line"><span style="color:#A6ACCD;">    | otherwise = maxTail   </span></span>
+<span class="line"><span style="color:#A6ACCD;">    where maxTail = maximum&#39; xs</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><div class="language-plaintext line-numbers-mode"><button class="copy"></button><span class="lang">plaintext</span><pre><code><span class="line"><span style="color:#A6ACCD;">replicate&#39; :: (Num i, Ord i) =&gt; i -&gt; a -&gt; [a]   </span></span>
+<span class="line"><span style="color:#A6ACCD;">replicate&#39; n x   </span></span>
+<span class="line"><span style="color:#A6ACCD;">    | n &lt;= 0    = []   </span></span>
+<span class="line"><span style="color:#A6ACCD;">    | otherwise = x:replicate&#39; (n-1) x</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>\u5B9E\u73B0<code>take</code>\u51FD\u6570</p><div class="language-plaintext line-numbers-mode"><button class="copy"></button><span class="lang">plaintext</span><pre><code><span class="line"><span style="color:#A6ACCD;">take&#39; :: (Num i, Ord i) =&gt; i -&gt; [a] -&gt; [a]   </span></span>
+<span class="line"><span style="color:#A6ACCD;">take&#39; n _   </span></span>
+<span class="line"><span style="color:#A6ACCD;">    | n&lt;=0   = []   </span></span>
+<span class="line"><span style="color:#A6ACCD;">take&#39; _ []     = []   </span></span>
+<span class="line"><span style="color:#A6ACCD;">take&#39; n (x:xs) = x : take&#39; (n-1) xs</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>quicksort</p><div class="language-plaintext line-numbers-mode"><button class="copy"></button><span class="lang">plaintext</span><pre><code><span class="line"><span style="color:#A6ACCD;">quicksort :: (Ord a) =&gt; [a] -&gt; [a]   </span></span>
+<span class="line"><span style="color:#A6ACCD;">quicksort [] = []   </span></span>
+<span class="line"><span style="color:#A6ACCD;">quicksort (x:xs) =   </span></span>
+<span class="line"><span style="color:#A6ACCD;">  let smallerSorted = quicksort [a | a&lt;-xs, a&lt;=x]  </span></span>
+<span class="line"><span style="color:#A6ACCD;">       biggerSorted = quicksort [a | a&lt;-xs, a &gt; x]   </span></span>
+<span class="line"><span style="color:#A6ACCD;">  in smallerSorted ++ [x] ++ biggerSorted</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div>`,7),r=[p];function t(c,i,o,m,u,b){return n(),a("div",null,r)}var C=s(l,[["render",t]]);export{A as __pageData,C as default};

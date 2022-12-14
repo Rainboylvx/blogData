@@ -1,0 +1,1 @@
+import{_ as e,j as t,g as a}from"./chunks/framework.6fa7194a.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"\u5B66\u4E60\u7B14\u8BB0/koa2/route.md"}'),r={name:"\u5B66\u4E60\u7B14\u8BB0/koa2/route.md"};function o(s,n,c,p,_,d){return a(),t("div")}var f=e(r,[["render",o]]);export{m as __pageData,f as default};
