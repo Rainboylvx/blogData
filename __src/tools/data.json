@@ -1,0 +1,467 @@
+[
+    {
+        "title": "_单片机",
+        "children": [
+            {
+                "title": "F1C100S",
+                "children": [
+                    {
+                        "title": "1-初食",
+                        "path": "_单片机/F1C100S/1-初食.md",
+                        "out_path": "dist/1-初食.md"
+                    },
+                    {
+                        "title": "2-点亮LED仪式",
+                        "path": "_单片机/F1C100S/2-点亮LED仪式.md",
+                        "out_path": "dist/2-点亮LED仪式.md"
+                    }
+                ]
+            },
+            {
+                "title": "RT-thread",
+                "children": [
+                    {
+                        "title": "rt-thread学习路线",
+                        "path": "_单片机/RT-thread/rt-thread学习路线.md",
+                        "out_path": "dist/rt-thread学习路线.md"
+                    },
+                    {
+                        "title": "rt-thread内核笔记",
+                        "path": "_单片机/RT-thread/内核笔记.md",
+                        "out_path": "dist/内核笔记.md"
+                    }
+                ]
+            },
+            {
+                "title": "usb",
+                "children": [
+                    {
+                        "title": "usb协议",
+                        "path": "_单片机/usb/usb协议.md",
+                        "out_path": "dist/usb协议.md"
+                    }
+                ]
+            },
+            {
+                "title": "xmega",
+                "children": [
+                    {
+                        "title": "1.熟悉",
+                        "path": "_单片机/xmega/1.熟悉.md",
+                        "out_path": "dist/1.熟悉.md"
+                    },
+                    {
+                        "title": "ADC",
+                        "path": "_单片机/xmega/ADC.md",
+                        "out_path": "dist/ADC.md"
+                    },
+                    {
+                        "title": "EEPROM的原理",
+                        "path": "_单片机/xmega/EEPROM的原理.md",
+                        "out_path": "dist/EEPROM的原理.md"
+                    },
+                    {
+                        "title": "keyplus分析笔记",
+                        "path": "_单片机/xmega/keyplus分析笔记.md",
+                        "out_path": "dist/keyplus分析笔记.md"
+                    },
+                    {
+                        "title": "TWI总线",
+                        "path": "_单片机/xmega/TWI总线.md",
+                        "out_path": "dist/TWI总线.md"
+                    },
+                    {
+                        "title": "中断",
+                        "path": "_单片机/xmega/中断.md",
+                        "out_path": "dist/中断.md"
+                    },
+                    {
+                        "title": "头文件",
+                        "path": "_单片机/xmega/头文件.md",
+                        "out_path": "dist/头文件.md"
+                    },
+                    {
+                        "title": "片内定时器",
+                        "path": "_单片机/xmega/片内定时器.md",
+                        "out_path": "dist/片内定时器.md"
+                    },
+                    {
+                        "title": "看门狗",
+                        "path": "_单片机/xmega/看门狗.md",
+                        "out_path": "dist/看门狗.md"
+                    },
+                    {
+                        "title": "端口IOport",
+                        "path": "_单片机/xmega/端口IOport.md",
+                        "out_path": "dist/端口IOport.md"
+                    },
+                    {
+                        "title": "第6章AVR_CPU",
+                        "path": "_单片机/xmega/第6章AVR_CPU.md",
+                        "out_path": "dist/第6章AVR_CPU.md"
+                    },
+                    {
+                        "title": "第7章Memory",
+                        "path": "_单片机/xmega/第7章Memory.md",
+                        "out_path": "dist/第7章Memory.md"
+                    }
+                ]
+            },
+            {
+                "title": "芯片",
+                "children": [
+                    {
+                        "title": "74hc595的理解",
+                        "path": "_单片机/芯片/74hc595的理解.md",
+                        "out_path": "dist/74hc595的理解.md"
+                    },
+                    {
+                        "title": "pca9555",
+                        "path": "_单片机/芯片/pca9555.md",
+                        "out_path": "dist/pca9555.md"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "_日常技巧",
+        "children": [
+            {
+                "title": "windows",
+                "path": "_日常技巧/windows.md",
+                "out_path": "dist/windows.md"
+            }
+        ]
+    },
+    {
+        "title": "_日常生活",
+        "children": [
+            {
+                "title": "养小孩",
+                "children": [
+                    {
+                        "title": "辅食的制作",
+                        "path": "_日常生活/养小孩/辅食.md",
+                        "out_path": "dist/辅食.md"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "_研究思考",
+        "children": [
+            {
+                "title": "_markdown思考视频的脚本",
+                "path": "_研究思考/_markdown思考视频的脚本.md",
+                "out_path": "dist/_markdown思考视频的脚本.md"
+            }
+        ]
+    },
+    {
+        "title": "EnglishLearn",
+        "children": [
+            {
+                "title": "index",
+                "path": "EnglishLearn/index.md",
+                "out_path": "dist/index.md"
+            }
+        ]
+    },
+    {
+        "title": "Linux命令与软件",
+        "children": [
+            {
+                "title": "_nginx",
+                "path": "Linux命令与软件/_nginx.md",
+                "out_path": "dist/_nginx.md"
+            },
+            {
+                "title": "awk",
+                "path": "Linux命令与软件/awk.md",
+                "out_path": "dist/awk.md"
+            },
+            {
+                "title": "bspwm",
+                "path": "Linux命令与软件/bspwm.md",
+                "out_path": "dist/bspwm.md"
+            },
+            {
+                "title": "buku",
+                "path": "Linux命令与软件/buku.md",
+                "out_path": "dist/buku.md"
+            },
+            {
+                "title": "cups_打印机hp202dw",
+                "path": "Linux命令与软件/cups_打印机hp202dw.md",
+                "out_path": "dist/cups_打印机hp202dw.md"
+            },
+            {
+                "title": "ffmpeg",
+                "path": "Linux命令与软件/ffmpeg.md",
+                "out_path": "dist/ffmpeg.md"
+            },
+            {
+                "title": "ImageMagick使用",
+                "path": "Linux命令与软件/ImageMagick使用.md",
+                "out_path": "dist/ImageMagick使用.md"
+            },
+            {
+                "title": "index",
+                "path": "Linux命令与软件/index.md",
+                "out_path": "dist/index.md"
+            },
+            {
+                "title": "irc使用教程",
+                "path": "Linux命令与软件/irc.md",
+                "out_path": "dist/irc.md"
+            },
+            {
+                "title": "navi",
+                "path": "Linux命令与软件/navi.md",
+                "out_path": "dist/navi.md"
+            },
+            {
+                "title": "linux使用nfs共享文件",
+                "path": "Linux命令与软件/nfs.md",
+                "out_path": "dist/nfs.md"
+            },
+            {
+                "title": "sed命令的学习",
+                "path": "Linux命令与软件/sed.md",
+                "out_path": "dist/sed.md"
+            },
+            {
+                "title": "ssh",
+                "path": "Linux命令与软件/ssh.md",
+                "out_path": "dist/ssh.md"
+            },
+            {
+                "title": "Tiny Tiny Rss的安装与使用",
+                "path": "Linux命令与软件/tinytinyrss.md",
+                "out_path": "dist/tinytinyrss.md"
+            },
+            {
+                "title": "tmux学习笔记",
+                "path": "Linux命令与软件/tmux.md",
+                "out_path": "dist/tmux.md"
+            }
+        ]
+    },
+    {
+        "title": "openwrt_and_Nas",
+        "children": [
+            {
+                "title": "calibre_web的安装",
+                "path": "openwrt_and_Nas/calibre_web的安装.md",
+                "out_path": "dist/calibre_web的安装.md"
+            },
+            {
+                "title": "headscale",
+                "path": "openwrt_and_Nas/headscale.md",
+                "out_path": "dist/headscale.md"
+            },
+            {
+                "title": "iptables",
+                "path": "openwrt_and_Nas/iptables.md",
+                "out_path": "dist/iptables.md"
+            },
+            {
+                "title": "ss-libv安装",
+                "path": "openwrt_and_Nas/ss-libv安装.md",
+                "out_path": "dist/ss-libv安装.md"
+            },
+            {
+                "title": "群晖上安装gitea",
+                "path": "openwrt_and_Nas/群晖上安装gitea.md",
+                "out_path": "dist/群晖上安装gitea.md"
+            }
+        ]
+    },
+    {
+        "title": "program_under_linux",
+        "children": [
+            {
+                "title": "index",
+                "path": "program_under_linux/index.md",
+                "out_path": "dist/index.md"
+            },
+            {
+                "title": "io",
+                "path": "program_under_linux/io.md",
+                "out_path": "dist/io.md"
+            }
+        ]
+    },
+    {
+        "title": "VIM",
+        "children": [
+            {
+                "title": "index",
+                "path": "VIM/index.md",
+                "out_path": "dist/index.md"
+            },
+            {
+                "title": "learn_vimscript_the_hard_way",
+                "path": "VIM/learn_vimscript_the_hard_way.md",
+                "out_path": "dist/learn_vimscript_the_hard_way.md"
+            },
+            {
+                "title": "vim-complete",
+                "path": "VIM/vim-complete.md",
+                "out_path": "dist/vim-complete.md"
+            },
+            {
+                "title": "vim-config-options",
+                "path": "VIM/vim-config-options.md",
+                "out_path": "dist/vim-config-options.md"
+            },
+            {
+                "title": "vim-fold",
+                "path": "VIM/vim-fold.md",
+                "out_path": "dist/vim-fold.md"
+            },
+            {
+                "title": "vim-regex",
+                "path": "VIM/vim-regex.md",
+                "out_path": "dist/vim-regex.md"
+            },
+            {
+                "title": "vim插件_vimemoji",
+                "path": "VIM/vim插件_vimemoji.md",
+                "out_path": "dist/vim插件_vimemoji.md"
+            },
+            {
+                "title": "vim插件emmet_draft",
+                "path": "VIM/vim插件emmet_draft.md",
+                "out_path": "dist/vim插件emmet_draft.md"
+            },
+            {
+                "title": "在vim中生成tag",
+                "path": "VIM/在vim中生成tag.md",
+                "out_path": "dist/在vim中生成tag.md"
+            },
+            {
+                "title": "如何编写vim插件",
+                "path": "VIM/如何编写vim插件.md",
+                "out_path": "dist/如何编写vim插件.md"
+            }
+        ]
+    },
+    {
+        "title": "vite",
+        "children": [
+            {
+                "title": "README",
+                "path": "vite/README.md",
+                "out_path": "dist/README.md"
+            }
+        ]
+    },
+    {
+        "title": "学习笔记",
+        "children": [
+            {
+                "title": "cmake学习笔记一",
+                "path": "学习笔记/cmake学习笔记一.md",
+                "out_path": "dist/cmake学习笔记一.md"
+            },
+            {
+                "title": "cmake学习笔记二",
+                "path": "学习笔记/cmake学习笔记二.md",
+                "out_path": "dist/cmake学习笔记二.md"
+            },
+            {
+                "title": "index",
+                "path": "学习笔记/index.md",
+                "out_path": "dist/index.md"
+            }
+        ]
+    },
+    {
+        "title": "源码解读",
+        "children": [
+            {
+                "title": "markdown-it",
+                "children": [
+                    {
+                        "title": "block-table",
+                        "path": "源码解读/markdown-it/block-table.md",
+                        "out_path": "dist/block-table.md"
+                    },
+                    {
+                        "title": "markdown-it解读",
+                        "path": "源码解读/markdown-it/markdown-it解读.md",
+                        "out_path": "dist/markdown-it解读.md"
+                    },
+                    {
+                        "title": "ruler-3",
+                        "path": "源码解读/markdown-it/ruler-3.md",
+                        "out_path": "dist/ruler-3.md"
+                    },
+                    {
+                        "title": "token-2",
+                        "path": "源码解读/markdown-it/token-2.md",
+                        "out_path": "dist/token-2.md"
+                    }
+                ]
+            },
+            {
+                "title": "v-treeview",
+                "children": [
+                    {
+                        "title": "index",
+                        "path": "源码解读/v-treeview/index.md",
+                        "out_path": "dist/index.md"
+                    }
+                ]
+            },
+            {
+                "title": "vitepress",
+                "children": [
+                    {
+                        "title": "vitepress",
+                        "path": "源码解读/vitepress/vitepress.md",
+                        "out_path": "dist/vitepress.md"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "网页前端",
+        "children": [
+            {
+                "title": "grid布局",
+                "path": "网页前端/grid布局.md",
+                "out_path": "dist/grid布局.md"
+            },
+            {
+                "title": "nodejs常用包",
+                "path": "网页前端/nodejs常用包.md",
+                "out_path": "dist/nodejs常用包.md"
+            }
+        ]
+    },
+    {
+        "title": "英语学习",
+        "children": [
+            {
+                "title": "可汗学院-英语语法",
+                "children": [
+                    {
+                        "title": "1",
+                        "path": "英语学习/可汗学院-英语语法/1.md",
+                        "out_path": "dist/1.md"
+                    },
+                    {
+                        "title": "index",
+                        "path": "英语学习/可汗学院-英语语法/index.md",
+                        "out_path": "dist/index.md"
+                    }
+                ]
+            }
+        ]
+    }
+]

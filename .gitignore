@@ -5,3 +5,5 @@ pnpm-lock.yaml
 *.out
 build/
 *.o
+.vscode
+yarn-error.log

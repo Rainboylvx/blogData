@@ -1,0 +1,109 @@
+@import './variable';
+.treeview-container {
+    width: $side-nav-width;
+    position:fixed;
+    z-index:999;
+    top:0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    border: 1px solid rgba($color: #000, $alpha: 0.2);
+
+    label {
+        display: block;
+        z-index:200;
+        cursor: pointer;
+        color: var(--fg-color3);
+        overflow: hidden;
+        white-space: nowrap;
+
+        &:hover {
+            background-color: var(--treeView-bg-color2);
+            overflow: visible;
+            border: 1px solid;
+            border-color:rgba($color: #fff, $alpha: 0.1);
+        }
+    }
+    label.active{
+        color: var(--fg-color1);
+        background:var(--treeView-bg-color2) ;
+    }
+
+    .vTree-menu {
+        min-width:200px;
+        overflow: auto;
+        z-index: 200;
+        position: absolute;
+        top:0px;
+        left:-1000px;
+        height: 100vh;
+        transition :all 0.3s ease;
+        background-color: var(--treeView-bg-color2);
+    }
+    input[type="radio"] {
+        display: none;
+    }
+    input[type="radio"]:checked + .vTree-menu {
+        left: $side-nav-width;
+    }
+}
+
+.fake-mask {
+    z-index:200;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    backdrop-filter: blur(5px) brightness(60%);
+    display: none;
+
+    &:hover {
+        backdrop-filter: brightness(80%) sepia(80%);
+        box-shadow: -10px 10px 10px #ccc inset;
+        // border:1px solid green;
+    }
+}
+
+.fake-mask:has(~ input[type="radio"]:checked ) {
+    display: block;
+}
+
+.mask{
+    z-index:300;
+    position: absolute;
+    top: 0;
+    left: 20;
+    width: $side-nav-width;
+    height: 100vh;
+    background-color: var(--treeView-bg-color);
+
+    .toggle-bar {
+        width: 20px;
+        height: 20px;
+        svg {
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            fill:#fff;
+        }
+    }
+    .toggle-bar:has(+input[type="checkbox"]:checked) {
+        background-color: yellow;
+        position:absolute;
+        left: 100px;
+        top:10px;
+    }
+}
+
+.treeview-container:has( .mask input.treeview-show:checked ) {
+    left:-100px;
+}
+.mask:has( input#treeview-show[type="checkbox"]:checked ) {
+    background-color: red;
+}
+.treeview-container:has(.mask  input#treeview-show[type="checkbox"]:checked ) {
+
+    left:-100px;
+}
+

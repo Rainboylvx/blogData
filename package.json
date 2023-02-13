@@ -1,35 +1,46 @@
 {
-  "name": "cpphub_web_html",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "rainboyBlog",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "vitepress dev .",
-    "build": "vitepress build .",
-    "serve": "vitepress serve .",
-    "com:dev": "vite --config components-vite.config.js"
+    "dev": "vite --host",
+    "build": "tsc --build tsconfig_cgi.json",
+    "build_vite": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "bin": {
+    "staticwebgen": "./bin/staticWebGen.js"
+  },
   "dependencies": {
-    "@docsearch/css": "^3.0.0",
-    "@docsearch/js": "^3.0.0",
-    "@vitejs/plugin-vue": "^2.3.3",
-    "@vue/devtools-api": "^6.1.4",
-    "@vueuse/core": "^8.5.0",
-    "body-scroll-lock": "^4.0.0-beta.0",
-    "markdown-it-mathjax3": "^4.3.1",
-    "myutils": "file:.vitepress/utils",
-    "sass": "^1.54.0",
-    "shiki": "^0.10.1",
-    "vite": "^2.9.7",
-    "viz.js": "^2.1.2",
-    "vue": "^3.2.33"
+    "fs-extra": "^11.1.0",
+    "glob": "^8.0.3",
+    "markdown-it": "^13.0.1",
+    "vue": "^3.2.45",
+    "yaml-front-matter": "^4.1.1"
   },
   "devDependencies": {
-    "markmap-common": "^0.14.0",
-    "markmap-lib": "^0.14.1",
-    "markmap-view": "^0.14.0"
+    "@types/ejs": "^3.1.1",
+    "@types/fs-extra": "^11.0.1",
+    "@types/glob": "^8.0.0",
+    "@types/markdown-it": "^12.2.3",
+    "@types/markdown-it-attrs": "^4.1.0",
+    "@types/markdown-it-emoji": "^2.0.2",
+    "@types/node": "^18.11.18",
+    "@types/yaml-front-matter": "^4.1.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "axios": "^1.2.2",
+    "ejs": "^3.1.8",
+    "gray-matter": "^4.0.3",
+    "markdown-it-anchor": "^8.6.6",
+    "markdown-it-attrs": "^4.1.6",
+    "markdown-it-emoji": "^2.0.2",
+    "markdown-it-kbd": "^2.2.2",
+    "markdown-it-mathjax3": "^4.3.2",
+    "markdown-it-toc-done-right": "^4.2.0",
+    "sass": "^1.57.1",
+    "vite": "^4.0.0",
+    "vite-svg-loader": "^4.0.0",
+    "vue-tsc": "^1.0.22"
   }
 }
