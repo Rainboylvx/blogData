@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+.error {
+    display: none;
+}
+input:invalid ~ p.error{
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <h1>hello</h1>
+    <form action="" id="form">
+        <label for="">test1</label>
+        <input type="text" pattern="\d+">
+        <p class="error">error</p>
+        <button id="button" type="submit">submit</button>
+    </form>
+    <script>
+        var button= document.getElementById('button')
+        var form = document.getElementById('form')
+        //当form 发生 invalid 的时候触发
+        form.addEventListener('invalid',function(){
+            console.log('invalid')
+        },true)
+
+        //当form 发生 submit 的时候触发
+        form.addEventListener('submit',function(event){
+            event.preventDefault(); //阻止默认行为
+            let checked = this.checkValidity()
+            console.log(checked)
+            console.log('this')
+        },true);
+
+    </script>
+</body>
+</html>

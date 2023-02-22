@@ -1,0 +1,23 @@
+<!-- 加入jquery, 3s 动态添加 class-->
+<!-- 动态给父元素添加类,来实现child的动态代码 -->
+<html>
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+.h1-father.active h1 {
+    animation-name: fadeInDown;
+}
+</style>
+</head>
+<body>
+
+    <div id="h1-father" class="h1-father active">
+        <h1 id="h1" class="h1 animate__animated">An animated element</h1>
+    </div>
+    <script src="./basic3.js"></script>
+</body>
+</html>

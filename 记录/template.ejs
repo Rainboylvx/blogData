@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+  </head>
+  <body>
+      <div class="db--item">
+          <a href="<%= item.douban _%>">
+              <img src="<%= item.img%>" class="db--image">
+          </a>
+          <div class="db--time"><%= item.time%></div>
+          <div class="db--title">
+              <a href="<%= item.douban _%>"><%= item.name%></a>
+          </div>
+      </div>
+  </body>
+</html>

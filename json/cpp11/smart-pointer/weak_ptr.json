@@ -1,0 +1,1 @@
+{"data":{},"__content":"<p>使用之前必须要复制一份</p>\n<pre><code class=\"language-cpp\">auto sp = std::make_shared&lt;int&gt;(42);\nauto wp = sp;\ngw = sp;\nobserve();\n\n</code></pre>\n<ul>\n<li><a href=\"https://blog.csdn.net/albertsh/article/details/82286999\">智能指针（三）：weak_ptr浅析_AlbertS Home of Technology-CSDN博客</a></li>\n</ul>\n"}

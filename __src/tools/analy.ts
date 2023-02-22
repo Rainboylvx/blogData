@@ -26,6 +26,8 @@ export interface MenuInterface{
     children?: MenuInterface[]
 }
 
+// 搜索Blog目录下的所有md文件
+// 形成 MenuInterface
 class AnalyzeBlogDataClass {
     search_dir:string;
     output_prefix:string
@@ -71,30 +73,31 @@ class AnalyzeBlogDataClass {
     }
 
 
+    // 最核心的函数,递归的扫描 ,创建MenuInterface
     // 返回值 bool 
     // if 返回 true ,则说明返回无内容
     work(path:string,title:string,object:MenuInterface) : Boolean {
 
         object.title = filename_remove_ext(title)
-        console.log("path:",relative(this.search_dir,path) )
+        // console.log("path:",relative(this.search_dir,path) )
 
-        console.log("====md_files====")
+        // console.log("====md_files====")
         let md_files = this.Glob_md(path);
         if( md_files.length ) 
             object.children = []
-        console.log(md_files)
+        // console.log(md_files)
         for( let md_file of md_files) {
             let a:MenuInterface = this.do_for_one_md_file(path, md_file);
             object.children!.push(a);
         }
-        console.log( object )
+        // console.log( object )
 
-        console.log("====dirs====")
+        // console.log("====dirs====")
         let dirs = this.Glob_dir(path)
-        console.log( dirs )
-        console.log( dirs.length )
+        // console.log( dirs )
+        // console.log( dirs.length )
         if(dirs.length){
-            console.log('yes')
+            // console.log('yes')
             if(!object.children ) object.children = [];
         }
         //没有子文件夹的情况下,通过md_file来判断是否空
@@ -103,14 +106,14 @@ class AnalyzeBlogDataClass {
             return !(object.children)
         }
 
-        console.log( dirs )
+        // console.log( dirs )
         for( let dir of dirs){
-            console.log("-->", dir )
+            // console.log("-->", dir )
             let new_path = join(path,dir);
             let a :MenuInterface = { title:'', path:''}
             let bret = this.work(new_path,dir,a)
-            console.log('bret->',bret )
-            console.log('bret->',a)
+            // console.log('bret->',bret )
+            // console.log('bret->',a)
             if( bret == false) // 扫描这个dir,不空
             {
 

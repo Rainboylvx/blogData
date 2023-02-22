@@ -1,0 +1,1 @@
+{"data":{},"__content":"<h1 id=\"%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6\" tabindex=\"-1\">复制文件描述符</h1>\n<pre><code>#include&lt;unistd.h&gt;\nint dup(int filedes);\nint dup2(int filedes, int filedes2);\n//成功返回复制后的文件描述符，失败时返回-1\n</code></pre>\n<ul>\n<li>filedes:需要复制的文件描述符</li>\n<li>filedes2:明确指定的文件描述符整数值</li>\n</ul>\n"}

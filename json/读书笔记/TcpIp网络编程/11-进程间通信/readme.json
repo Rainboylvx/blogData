@@ -1,0 +1,1 @@
+{"data":{},"__content":"<h1 id=\"%E9%80%9A%E8%BF%87%E7%AE%A1%E9%81%93%E5%AE%9E%E7%8E%B0%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1\" tabindex=\"-1\">通过管道实现进程间通信</h1>\n<pre><code>#include&lt;unistd.h&gt;\n\nint pipe(int filedes[2]);\n//成功时返回0，失败时返回-1\n</code></pre>\n<ul>\n<li>filedes[0]: 通过管道接收数据时使用的文件描述符，即管道出口</li>\n<li>filedes[1]: 通过管道发送数据时使用的文件描述符，即管道入口</li>\n</ul>\n"}

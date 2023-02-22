@@ -1,0 +1,1 @@
+{"data":{},"__content":"<p>当D+/D-有一个上拉信号的时候,USB设备被检测到插入.</p>\n<p>过程:</p>\n<ul>\n<li>usb设备插入</li>\n<li>总线挂起复位多次</li>\n<li>host-&gt;usb设备请求</li>\n<li>device-&gt;host 设备描述符</li>\n</ul>\n<p>usb标请求\nGET_DESCRIPTOR\nSET_ADDRESS\nSET_CONFIGURATION\n设备描述符\n设置地址\n配置描述的集合</p>\n<ul>\n<li>配置描述符的结构</li>\n<li>接口描述符的结构</li>\n<li>端点描述符的结构</li>\n<li>HID描述符的结构\n字符串ji语言ID\n报告描述符</li>\n</ul>\n"}

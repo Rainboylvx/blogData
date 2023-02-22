@@ -1,0 +1,1 @@
+{"data":{},"__content":"<p>中断向量\n中断源\n中断源使能位\n全局中断</p>\n<p>中断产生后,全局中断使能位清零</p>\n<p>中断向量表:</p>\n<p>寄存器:</p>\n<p>MCUCR - MCU 控制寄存器\nMCUCSR - MCU 控制与状态寄存器\nGIFR - 通用中断状态寄存器\nSREG 状态寄存器</p>\n<p>中断服务函数</p>\n<pre><code>\n#pragma interrupt_handler &lt;函数名&gt; : &lt;中断向量&gt;\n</code></pre>\n"}

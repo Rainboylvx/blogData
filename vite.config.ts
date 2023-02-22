@@ -8,7 +8,7 @@ import node_qs from 'node:querystring'
 import * as url from 'url'
 
 import.meta.env = import.meta.env  || {}
-import.meta.env.outDir = 'dist'
+import.meta.env.outDir = 'json'
 
 
 import {Analyze,recursiveMenu,MenuInterface} from './__src/tools/analy'
@@ -23,6 +23,8 @@ let outDir = import.meta.env.outDir
 
 //清空,对blogData进行处理
 deal_menu_data(search_dir,outDir,search_data)
+
+//单独对readme就行渲染
 render_to_json_file(path.join(__dirname,'readme.md'),path.join(outDir,'readme.json'))
 
 var proxy = {

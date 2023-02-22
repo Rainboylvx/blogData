@@ -146,7 +146,7 @@ export const deal_menu_data = (search_dir:string,outDir:string,search_data:MenuI
     recursiveMenu(search_data,(d:MenuInterface) => {
 
         let org_path = d.path
-        let md_json_path = md_json_path_convert(org_path,'dist')
+        let md_json_path = md_json_path_convert(org_path,outDir)
 
         render_to_json_file(
             join(search_dir,d.path),

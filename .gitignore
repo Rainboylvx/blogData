@@ -7,3 +7,4 @@ build/
 *.o
 .vscode
 yarn-error.log
+push.sh

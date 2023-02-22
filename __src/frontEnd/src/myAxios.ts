@@ -1,4 +1,5 @@
 import axios, {AxiosInstance,AxiosRequestConfig} from 'axios';
+const outDir = import.meta.env.outDir || 'json'
 
 
 function PathJoin(...args:string[]) {
@@ -101,7 +102,7 @@ interface md_server_return_interface {
 
 export const get_md = (filename:string) : Promise<md_server_return_interface>  => {
     if( /.*\.md/.test(filename) )
-        filename = md_json_path_convert(filename,'dist')
+        filename = md_json_path_convert(filename,outDir)
     return axios_inst({
         url: filename,
         method: 'get',

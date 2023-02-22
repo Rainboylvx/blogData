@@ -1,0 +1,12 @@
+- 
+  title: 序
+  path: index.md
+- 
+  title: lambda
+  path: lambda.md
+- 
+  title: random
+  path: random.md
+- 
+  title: random_shuffle
+  path: random_shuffle.md
